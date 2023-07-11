@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(to left,#fdb369,#fc9161)
+}
+img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.container{
+    width: 90vw;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+    height: 460px;
+    background: #fff;
+    position: relative;
+}
+.header{
+    background: #ff6144;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0 ;
+}
+.image{
+    position: absolute;
+    bottom: -25px;
+}
+.content{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.text{
+    text-align: center;
+}
+.text span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.text p{
+    font-size: 13px;
+    font-family: inherit;
+}
+.orders{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.order{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 400px;
+}
+.order p{
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+.add-item{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    align-items: center;
+}
+.add-item span{
+    border: 1px solid rgb(235, 227, 227);
+    padding: 2px 4px;
+    font-size: 14px;
+}
+.add-item .fa-solid{
+    font-size: 12px;
+}
+.price{
+    margin-left: 5px;
+}
+.price p{
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-x{
+    font-size: 10px;
+    background: #f4f4f6;
+    color: #959596;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    border-radius: 50px;
+}
+.fa-x:hover{
+    background: #ff6144;
+    color: #fff;
+    cursor: pointer;
+}
+#beverages{
+    width: 120px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-size: 11px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px dashed #333;
+    position: relative;
+}
+#beverages:hover{
+    background: #ff6144;
+    color: #fff;
+    border: none;
+}
+#beverages img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -2px;
+    right: 1px;
+}
+
+
+.total{
+    background: #f4f4f6;
+    padding: 15px 25px;
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.total span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.total p{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.subtotal{
+    display: flex;
+    padding-bottom: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.shipping{
+    padding-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkout{
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 14px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #ff6144;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.checkout:hover{
+    box-shadow: 0 0 10px #ff6144;
+}
+
+.fa-plus,
+.fa-minus{
+    cursor: pointer;
+    color: #acafbb;
+}
+.fa-plus:active{
+    color: green;
+    scale: 1.2;
+}
+.fa-minus:active{
+    color: red;
+    scale: 1.2;
+}
+.hidden{
+    display: none;
+}
+.confirmation{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 200px;
+    padding: 25px 25px;
+    background: #fff;
+    animation:  conf 3s alternate;
+}
+.confirmation p{
+    font-size: 13px;
+    font-family:  Tahoma
+
+}
+
+
+@media(max-width:400px){
+    .order{
+        width: 90%;
+        margin-left: 15px;
+    }
+}
+
+@keyframes conf{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
