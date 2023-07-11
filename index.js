@@ -37,7 +37,12 @@ orders.forEach(order => {
 
 
 checkoutButton.addEventListener('click', () => {
-
+    if(plusButton.isChecked){
+        alert("test)
+    }else{
+    
+    }
+    
     document.querySelector('.content').style.display = 'none';
 
     confirmationMessage.classList.remove('hidden');
