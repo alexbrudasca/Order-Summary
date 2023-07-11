@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="image">
+                <img src="https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-20142-640x640.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="text">
+                <p>Your order from</p>
+                <span>Pizza Hut</span>
+            </div>
+            <div class="orders">
+                <div class="order">
+                    <p>British Pizza | Medium</p>
+                    <div class="add-item">
+                        <i class="fa-solid fa-minus"></i>
+                        <span class="number">1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="price">
+                        <p id="paraPrice">$7.99</p>
+                    </div>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="order">
+                    <p>Pizza Diavola | Medium</p>
+                    <div class="add-item">
+                        <i class="fa-solid fa-minus"></i>
+                        <span class="number">1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="price">
+                        <p id="paraPrice">$7.99</p>
+                    </div>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="buttons__container">
+                    <button id="beverages">
+                      <img src="https://cdn-icons-png.flaticon.com/128/492/492988.png" alt="">
+                        <p>Add a beverage</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <div class="subtotal">
+                <p>Subtotal</p>
+                <span id="subtotal-amount">$00.00</span>
+            </div>
+            <div class="shipping">
+                <p>Shipping</p>
+                <span>$2.00</span>
+            </div>
+            <div class="vat">
+                <p>Total (VAT inc.)</p>
+                <span id="total-amount">$00.00</span>
+            </div>
+        </div>
+        <div id="checkout" class="checkout">
+            Checkout
+        </div>
+        <div id="confirmation" class="confirmation hidden">
+            <img src="https://cdn-icons-png.flaticon.com/128/190/190411.png" alt="Thank You">
+            <p>Thanks for checkout!</p>
+        </div>
+    </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
